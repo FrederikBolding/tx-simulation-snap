@@ -56,5 +56,13 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@ethereumjs/tx": "3.3.2",
+    "@ethereumjs/vm": "5.5.3",
+    "@ethersproject/units": "^5.7.0",
+    "@metamask/abi-utils": "^1.1.0",
+    "ethereumjs-util": "^7.1.5",
+    "hardhat": "2.6.7"
   }
 }

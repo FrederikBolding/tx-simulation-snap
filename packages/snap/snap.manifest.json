@@ -7,7 +7,7 @@
     "url": "https://github.com/MetaMask/template-snap-monorepo.git"
   },
   "source": {
-    "shasum": "naL9tJT7QHAFER/TGfTcjwUFZUMhrsWY5f8XqX28M/g=",
+    "shasum": "RLzL13gDmlL67tqgfZbgrtCQ6+PPcdDLiZQFF/CZvTg=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
@@ -18,7 +18,8 @@
     }
   },
   "initialPermissions": {
-    "snap_confirm": {}
+    "snap_confirm": {},
+    "endowment:network-access": {}
   },
   "manifestVersion": "0.1"
 }

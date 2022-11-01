@@ -67,6 +67,14 @@ export const sendHello = async () => {
       defaultSnapOrigin,
       {
         method: 'hello',
+        params: {
+          to: '0x9f2817015caF6607C1198fB943A8241652EE8906',
+          from: '0xe77162b7D2CEb3625a4993Bab557403a7B706F18',
+          data: '0xc97336f3',
+          gasLimit: 150000,
+          nonce: 187,
+          value: '0x2386f26fc10000',
+        },
       },
     ],
   });
