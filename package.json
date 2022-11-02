@@ -49,7 +49,7 @@
   },
   "resolutions": {
     "lodash": "patch:lodash@npm:4.17.21#.yarn/patches/lodash-npm-4.17.21-6382451519.patch",
-    "@ethereumjs/vm": "patch:@ethereumjs/vm@npm:5.5.3#.yarn/patches/@ethereumjs-vm-npm-5.5.3-a09ca64797.patch",
-    "rustbn.js@0.2.0": "patch:rustbn.js@npm:0.2.0#.yarn/patches/rustbn.js-npm-0.2.0-ed57934f98.patch"
+    "ganache": "patch:ganache@npm:7.5.0#.yarn/patches/ganache-npm-7.5.0-39a409db90.patch",
+    "ltgt": "patch:ltgt@npm:2.2.1#.yarn/patches/ltgt-npm-2.2.1-443b5da86d.patch"
   }
 }
