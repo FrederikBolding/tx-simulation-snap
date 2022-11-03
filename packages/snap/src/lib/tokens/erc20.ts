@@ -1,36 +1,44 @@
-import VM from '@ethereumjs/vm';
 import { decodeSingle } from '@metamask/abi-utils';
-import { addHexPrefix, Address } from 'ethereumjs-util';
+import { add0x } from '@metamask/utils';
+import { EthereumProvider } from 'ganache';
 
-const getTokenSymbol = async (vm: VM, address: string) => {
-  const payload = {
-    to: Address.fromString(address),
-    caller: Address.zero(),
-    data: Buffer.from('95d89b41', 'hex'),
-  };
-  const result = await vm.runCall(payload);
-  const hexResult = addHexPrefix(
-    result.execResult.returnValue.toString('hex'),
-  ) as `0x${string}`;
-  const decoded = decodeSingle('string', hexResult);
+const getTokenSymbol = async (provider: EthereumProvider, address: string) => {
+  const result = await provider.request({
+    method: 'eth_call',
+    params: [
+      {
+        to: address,
+        data: '0x95d89b41',
+      },
+    ],
+  });
+  const decoded = decodeSingle('string', result as `0x${string}`);
   return decoded;
 };
 
-const getTokenDecimals = async (vm: VM, address: string) => {
-  const payload = {
-    to: Address.fromString(address),
-    caller: Address.zero(),
-    data: Buffer.from('313ce567', 'hex'),
-  };
-  const result = await vm.runCall(payload);
-  const hexResult = addHexPrefix(
-    result.execResult.returnValue.toString('hex'),
-  ) as `0x${string}`;
-  const decoded = addHexPrefix(decodeSingle('uint8', hexResult).toString(16));
+const getTokenDecimals = async (
+  provider: EthereumProvider,
+  address: string,
+) => {
+  const result = await provider.request({
+    method: 'eth_call',
+    params: [
+      {
+        to: address,
+        data: '0x95d89b41',
+      },
+    ],
+  });
+  const decoded = add0x(
+    decodeSingle('uint8', result as `0x${string}`).toString(16),
+  );
   return decoded;
 };
 
-export const decodeERC20Transfers = async (vm: VM, logs: any) => {
+export const decodeERC20Transfers = async (
+  provider: EthereumProvider,
+  logs: any,
+) => {
   try {
     return await Promise.all(
       logs
@@ -44,8 +52,8 @@ export const decodeERC20Transfers = async (vm: VM, logs: any) => {
           const from = decodeSingle('address', log.topics[1]);
           const to = decodeSingle('address', log.topics[2]);
           const value = decodeSingle('uint256', log.data).toString(10);
-          const symbol = await getTokenSymbol(vm, log.address);
-          const decimals = await getTokenDecimals(vm, log.address);
+          const symbol = await getTokenSymbol(provider, log.address);
+          const decimals = await getTokenDecimals(provider, log.address);
           return { from, to, value, symbol, decimals };
         }),
     );

@@ -1,0 +1,13 @@
+diff --git a/index.js b/index.js
+index 0724e69d2739db297c4e041685514cb8d67d5bcf..d8d32964fc3e5747c03434a886a7a7adc6309bda 100644
+--- a/index.js
++++ b/index.js
+@@ -1,7 +1,7 @@
+ 
+ exports.compare = function (a, b) {
+ 
+-  if(Buffer.isBuffer(a)) {
++  if(a instanceof Uint8Array) {
+     var l = Math.min(a.length, b.length)
+     for(var i = 0; i < l; i++) {
+       var cmp = a[i] - b[i]
