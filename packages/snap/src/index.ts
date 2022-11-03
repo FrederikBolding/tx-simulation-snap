@@ -1,7 +1,4 @@
-import {
-  OnRpcRequestHandler,
-  OnTransactionHandler,
-} from '@metamask/snap-types';
+import { OnTransactionHandler } from '@metamask/snap-types';
 import { formatUnits } from '@ethersproject/units';
 import memdown from 'memdown';
 import Ganache from 'ganache';
@@ -10,7 +7,7 @@ import { simulateTx } from './lib/simulation';
 
 const simulate = async (transaction: any) => {
   const provider = Ganache.provider({
-    fork: { network: 'mainnet' },
+    fork: { provider: (window as any).wallet },
     database: { db: memdown() },
     wallet: {
       totalAccounts: 0,
