@@ -60,6 +60,7 @@
   "dependencies": {
     "@ethersproject/units": "^5.7.0",
     "@metamask/abi-utils": "^1.1.0",
+    "@metamask/snaps-ui": "^0.26.1",
     "@metamask/utils": "^3.3.0",
     "ganache": "^7.5.0",
     "memdown": "^6.1.1"

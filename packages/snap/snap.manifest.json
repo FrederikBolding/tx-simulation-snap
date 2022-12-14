@@ -7,7 +7,7 @@
     "url": "https://github.com/FrederikBolding/tx-simulation-snap.git"
   },
   "source": {
-    "shasum": "ICyR9p+aF/xsBFbWt9/gfRINnBS0BSRfZVJU8PR67Ok=",
+    "shasum": "1jjk8D02nN8701/F9Uv7jPg16xLpPxiSPKe5ru9UQXU=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
@@ -18,9 +18,9 @@
     }
   },
   "initialPermissions": {
-    "snap_confirm": {},
     "endowment:network-access": {},
-    "endowment:transaction-insight": {}
+    "endowment:transaction-insight": {},
+    "endowment:ethereum-provider": {}
   },
   "manifestVersion": "0.1"
 }
