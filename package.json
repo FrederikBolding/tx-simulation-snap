@@ -25,6 +25,11 @@
     "start": "yarn workspaces foreach --parallel --interlaced --verbose run start",
     "test": "echo \"TODO\""
   },
+  "resolutions": {
+    "ganache": "patch:ganache@npm:7.5.0#.yarn/patches/ganache-npm-7.5.0-39a409db90.patch",
+    "lodash": "patch:lodash@npm:4.17.21#.yarn/patches/lodash-npm-4.17.21-6382451519.patch",
+    "ltgt": "patch:ltgt@npm:2.2.1#.yarn/patches/ltgt-npm-2.2.1-443b5da86d.patch"
+  },
   "devDependencies": {
     "@metamask/eslint-config": "^10.0.0",
     "@metamask/eslint-config-jest": "^10.0.0",
@@ -46,10 +51,5 @@
   "packageManager": "yarn@3.2.1",
   "engines": {
     "node": ">=16.0.0"
-  },
-  "resolutions": {
-    "lodash": "patch:lodash@npm:4.17.21#.yarn/patches/lodash-npm-4.17.21-6382451519.patch",
-    "ganache": "patch:ganache@npm:7.5.0#.yarn/patches/ganache-npm-7.5.0-39a409db90.patch",
-    "ltgt": "patch:ltgt@npm:2.2.1#.yarn/patches/ltgt-npm-2.2.1-443b5da86d.patch"
   }
 }

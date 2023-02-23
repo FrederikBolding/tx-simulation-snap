@@ -26,6 +26,15 @@
     "serve": "mm-snap serve",
     "start": "mm-snap watch"
   },
+  "dependencies": {
+    "@ethersproject/units": "^5.7.0",
+    "@metamask/abi-utils": "^1.1.0",
+    "@metamask/snaps-types": "^0.27.1",
+    "@metamask/snaps-ui": "^0.27.1",
+    "@metamask/utils": "^3.3.0",
+    "ganache": "^7.5.0",
+    "memdown": "^6.1.1"
+  },
   "devDependencies": {
     "@lavamoat/allow-scripts": "^2.0.3",
     "@metamask/auto-changelog": "^2.6.0",
@@ -55,14 +64,5 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "dependencies": {
-    "@ethersproject/units": "^5.7.0",
-    "@metamask/abi-utils": "^1.1.0",
-    "@metamask/snaps-types": "^0.27.1",
-    "@metamask/snaps-ui": "^0.27.1",
-    "@metamask/utils": "^3.3.0",
-    "ganache": "^7.5.0",
-    "memdown": "^6.1.1"
   }
 }
