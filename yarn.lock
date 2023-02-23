@@ -1467,18 +1467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.0.0, @babel/types@npm:^7.0.0-beta.49, @babel/types@npm:^7.15.4, @babel/types@npm:^7.16.8, @babel/types@npm:^7.18.10, @babel/types@npm:^7.18.4, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.19.0, @babel/types@npm:^7.19.3, @babel/types@npm:^7.19.4, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
-  version: 7.19.4
-  resolution: "@babel/types@npm:7.19.4"
-  dependencies:
-    "@babel/helper-string-parser": ^7.19.4
-    "@babel/helper-validator-identifier": ^7.19.1
-    to-fast-properties: ^2.0.0
-  checksum: 4032f6407093f80dd4f4764be676f7527d2a5c0381586967cd79683cf8af01cdc16745a381b9cef045f702f0c9b0dffd880d84ee55dad59ba01bd23d5d52a8e0
-  languageName: node
-  linkType: hard
-
-"@babel/types@npm:^7.18.7":
+"@babel/types@npm:^7.0.0, @babel/types@npm:^7.0.0-beta.49, @babel/types@npm:^7.15.4, @babel/types@npm:^7.16.8, @babel/types@npm:^7.18.10, @babel/types@npm:^7.18.4, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.7, @babel/types@npm:^7.18.9, @babel/types@npm:^7.19.0, @babel/types@npm:^7.19.3, @babel/types@npm:^7.19.4, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
   version: 7.21.2
   resolution: "@babel/types@npm:7.21.2"
   dependencies:
@@ -2358,18 +2347,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@metamask/utils@npm:^3.2.0, @metamask/utils@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@metamask/utils@npm:3.3.0"
-  dependencies:
-    "@types/debug": ^4.1.7
-    debug: ^4.3.4
-    superstruct: ^0.16.7
-  checksum: 263c26722b7339fced997cc2aa38ccb34d178f532ff025c7e789818ad5ef2317439eda694a4c0bf5ff3cabdeced3c170b9ad23d2f178ddd5fd225f6ec2bce259
-  languageName: node
-  linkType: hard
-
-"@metamask/utils@npm:^3.3.1":
+"@metamask/utils@npm:^3.2.0, @metamask/utils@npm:^3.3.0, @metamask/utils@npm:^3.3.1":
   version: 3.3.1
   resolution: "@metamask/utils@npm:3.3.1"
   dependencies:
@@ -15431,14 +15409,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"superstruct@npm:^0.16.5":
-  version: 0.16.5
-  resolution: "superstruct@npm:0.16.5"
-  checksum: 9f843c38695b584a605ae9b028629de18a85bd0dca0e9449b4ab98bb7b9ac3d82599870acbab9fbd2ee454c6b187af7e61562e252dfadabd974191ab4ab2e3ce
-  languageName: node
-  linkType: hard
-
-"superstruct@npm:^0.16.7":
+"superstruct@npm:^0.16.5, superstruct@npm:^0.16.7":
   version: 0.16.7
   resolution: "superstruct@npm:0.16.7"
   checksum: c8c855ff6945da8a41048c6d236de7b1af5d4d9c31742b3ee54d65647c31597488620281f65e095d5efc9e2fbdaad529b8c8f2506c12569d428467c835a21477
