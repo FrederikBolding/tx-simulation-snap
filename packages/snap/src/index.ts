@@ -1,4 +1,4 @@
-import { OnTransactionHandler } from '@metamask/snap-types';
+import { OnTransactionHandler } from '@metamask/snaps-types';
 import { formatUnits } from '@ethersproject/units';
 import memdown from 'memdown';
 import Ganache from 'ganache';

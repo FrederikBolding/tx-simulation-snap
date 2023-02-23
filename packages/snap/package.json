@@ -33,8 +33,7 @@
     "@metamask/eslint-config-jest": "^10.0.0",
     "@metamask/eslint-config-nodejs": "^10.0.0",
     "@metamask/eslint-config-typescript": "^10.0.0",
-    "@metamask/snap-types": "^0.22.0",
-    "@metamask/snaps-cli": "^0.22.0",
+    "@metamask/snaps-cli": "^0.27.1",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "eslint": "^8.21.0",
@@ -60,7 +59,8 @@
   "dependencies": {
     "@ethersproject/units": "^5.7.0",
     "@metamask/abi-utils": "^1.1.0",
-    "@metamask/snaps-ui": "^0.26.1",
+    "@metamask/snaps-types": "^0.27.1",
+    "@metamask/snaps-ui": "^0.27.1",
     "@metamask/utils": "^3.3.0",
     "ganache": "^7.5.0",
     "memdown": "^6.1.1"
